@@ -16,11 +16,16 @@ html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+section {
+  max-width: 2000px;
+}
+
 main {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: center;
 }
 main section.first {
   width: 100%;
@@ -68,8 +73,265 @@ main section.first .bottom .text button {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
+main section.second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+main section.second .top,
+main section.second .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+main section.second .top .element,
+main section.second .bottom .element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+main section.second .top .element h1,
+main section.second .bottom .element h1 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+main section.second .top .element small,
+main section.second .bottom .element small {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+main section.third {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.third .top {
+  width: 100%;
+}
+main section.third .top img {
+  width: 100%;
+  border-radius: 20px;
+}
+main section.third .bottom {
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1.5rem;
+}
+main section.third .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.third .bottom .text h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+main section.third .bottom .text p {
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  font-weight: 200;
+}
+main section.third .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+main section.forth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.forth .top {
+  width: 100%;
+}
+main section.forth .top img {
+  width: 100%;
+  border-radius: 20px;
+}
+main section.forth .bottom {
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1.5rem;
+}
+main section.forth .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.forth .bottom .text h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+main section.forth .bottom .text p {
+  line-height: 1.8rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  font-weight: 200;
+}
+main section.forth .bottom .text button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+main section.fifth {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.fifth .con h1 {
+  font-weight: 400;
+}
+main section.fifth .but {
+  display: none;
+}
+main section.fifth .but button {
+  padding: 0.5rem 0.5rem;
+}
+main section.sixth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.sixth .card {
+  background-image: url(./six1.webp);
+  aspect-ratio: 1/1;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 100%;
+}
+main section.sixth .card .icon, main section.sixth .card .bottom {
+  background-color: rgba(185, 183, 183, 0.241);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
+  border: 0.5px solid rgb(85, 84, 84);
+  border-radius: 0.5rem;
+}
+main section.sixth .card .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.sixth .card .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.sixth .card .bottom p {
+  color: white;
+  font-size: 1.2rem;
+}
+main section.sixth #cd {
+  background-image: url(./six2.webp);
+}
+main section.sixth #cd2 {
+  background-image: url(./six3.webp);
+}
+main section.seven {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.seven .top {
+  width: 100%;
+}
+main section.seven .top img {
+  width: 100%;
+  border-radius: 20px;
+}
+main section.seven .bottom {
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1.5rem;
+}
+main section.seven .bottom h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  width: 80%;
+}
+main section.seven .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.seven .bottom button {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+main section.eight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: black;
+  padding: 1rem;
+}
+main section.eight .container {
+  background-color: #CEBD63;
+  padding: 1rem;
+  border-radius: 20px;
+}
+main section.eight .container .top h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+main section.eight .container .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.eight .container .bottom button {
+  padding: 1rem 6rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+}
 
-@media (min-width: 965px) {
+@media (min-width: 1000px) {
   main section.first {
     flex-direction: row;
   }
@@ -87,5 +349,91 @@ main section.first .bottom .text button {
   main section.first .bottom .text p {
     width: 95%;
     font-size: 1.5rem;
+  }
+  main section.second {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  main section.second .top .element h1, main section.second .bottom .element h1 {
+    font-weight: 400;
+    font-size: 4rem;
+  }
+  main section.third {
+    flex-direction: row-reverse;
+  }
+  main section.third .top, main section.third .bottom {
+    width: 50%;
+  }
+  main section.third .bottom {
+    padding: 4rem;
+    justify-content: space-between;
+  }
+  main section.third .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main section.third .bottom .text .paragraphs {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  main section.forth {
+    flex-direction: row-reverse;
+  }
+  main section.forth .top, main section.forth .bottom {
+    width: 50%;
+  }
+  main section.forth .bottom {
+    padding: 4rem;
+    justify-content: space-between;
+  }
+  main section.forth .bottom .text h1 {
+    font-size: 3rem;
+  }
+  main section.forth .bottom .text .paragraphs {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  main section.fifth .but {
+    display: block;
+  }
+  main section.sixth {
+    flex-direction: row;
+    width: 100%;
+  }
+  main section.seven {
+    flex-direction: row;
+  }
+  main section.seven .top, main section.seven .bottom {
+    width: 50%;
+  }
+  main section.seven .bottom {
+    justify-content: space-between;
+    padding: 4rem;
+  }
+  main section.seven .bottom h2 {
+    font-size: 3rem;
+  }
+  main section.eight {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main section.eight .container {
+    width: 100%;
+    display: flex;
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main section.eight .container .top {
+    width: 70%;
+  }
+  main section.eight .container .top h2 {
+    font-size: 5rem;
+    font-weight: 200;
+  }
+  main section.eight .container .bottom button {
+    padding: 1rem 1.5rem;
   }
 }/*# sourceMappingURL=STYLE.css.map */
