@@ -14,7 +14,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    color: rgb(188, 185, 185);
+    color: rgb(190, 190, 190);
     background-color: rgb(29, 28, 28);
 }
 
@@ -26,10 +26,56 @@ section {
     max-width: 2000px;
 }
 
+footer {
+    max-width: 2000px;
+}
+
 main {
     width: 100%;
     @include flex(0.5rem);
     align-items: center;
+
+    section.header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0rem 2rem;
+        padding-top: 1rem;
+
+        .top {
+            h1 {
+                font-weight: 200;
+                font-size: 1.6rem;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            gap: 1rem;
+            display: none;
+
+            button {
+                padding: 1rem 1.5rem;
+                background-color: rgb(36, 36, 36);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 1rem;
+
+            }
+
+            #but {
+                background-color: #CEBD63;
+                color: black;
+            }
+        }
+
+        #icon {
+            font-size: 2rem;
+            display: block;
+        }
+    }
 
     section.first {
         width: 100%;
@@ -115,6 +161,9 @@ main {
         width: 100%;
         @include flex(1rem);
         padding: 1rem;
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
 
         .top {
             width: 100%;
@@ -162,10 +211,14 @@ main {
 
 
     }
-    section.forth{
-         width: 100%;
+
+    section.forth {
+        width: 100%;
         @include flex(1rem);
         padding: 1rem;
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
 
         .top {
             width: 100%;
@@ -211,32 +264,41 @@ main {
             }
         }
     }
-    section.fifth{
+
+    section.fifth {
         width: 100%;
         padding: 1rem 2rem;
-        display:flex ;
+        display: flex;
         justify-content: space-between;
         align-items: center;
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
 
-        .con{
-            h1{
+        .con {
+            h1 {
                 font-weight: 400;
             }
         }
 
-        .but{
-            button{
+        .but {
+            button {
                 padding: 0.5rem 0.5rem;
             }
+
             display: none;
         }
     }
-    section.sixth{
+
+    section.sixth {
         width: 100%;
         @include flex(1rem);
         padding: 1rem;
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
 
-        .card{
+        .card {
             background-image: url(./six1.webp);
             aspect-ratio: 1/1;
             background-size: cover;
@@ -246,95 +308,118 @@ main {
             padding: 1rem;
             border-radius: 20px;
             width: 100%;
-            .icon,.bottom{
-                  background-color: rgba(185, 183, 183, 0.241);
-                  display: flex;
-                  justify-content: space-between;
-                  padding: 1rem 1rem;
-                  backdrop-filter: blur(9px);
-                  border: 0.5px solid rgb(85, 84, 84);
-                  border-radius: 0.5rem;
+
+            .icon,
+            .bottom {
+                background-color: rgba(185, 183, 183, 0.241);
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 1rem;
+                backdrop-filter: blur(9px);
+                border: 0.5px solid rgb(85, 84, 84);
+                border-radius: 0.5rem;
             }
-            .top{
+
+            .top {
                 display: flex;
                 gap: 1rem;
                 justify-content: flex-end;
             }
-            .icon{
+
+            .icon {
                 width: fit-content;
                 border-radius: 50%;
             }
-            .bottom{
-                p{
+
+            .bottom {
+                p {
                     color: white;
                     font-size: 1.2rem;
                 }
             }
         }
-        #cd{
+
+        #cd {
             background-image: url(./six2.webp);
         }
-        #cd2{
-             background-image: url(./six3.webp);
+
+        #cd2 {
+            background-image: url(./six3.webp);
         }
-    
+
     }
-    section.seven{ 
+
+    section.seven {
         width: 100%;
         @include flex(1rem);
-        padding:1rem;
+        padding: 1rem;
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
 
-        .top{
+        .top {
             width: 100%;
-            img{
+
+            img {
                 width: 100%;
                 border-radius: 20px;
             }
         }
-        .bottom{
-                  width: 100%;
+
+        .bottom {
+            width: 100%;
             background-color: rgb(36, 36, 36);
             border-radius: 20px;
             @include flex(5rem);
             padding: 1.5rem;
-            h2{
+
+            h2 {
                 font-size: 2rem;
                 font-weight: 400;
                 width: 80%
             }
-            .text{
+
+            .text {
                 @include flex(1rem);
             }
-            button{
-                   width: fit-content;
-                    border: none;
-                    border-radius: 0.5rem;
-                    padding: 0.5rem 1rem;
+
+            button {
+                width: fit-content;
+                border: none;
+                border-radius: 0.5rem;
+                padding: 0.5rem 1rem;
             }
         }
 
     }
-    section.eight{
+
+    section.eight {
         width: 100%;
         @include flex(1rem);
         color: black;
         padding: 1rem;
-        .container{
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
+
+        .container {
             background-color: #CEBD63;
             padding: 1rem;
             border-radius: 20px;
 
-            .top{
-                h2{
+            .top {
+                h2 {
                     font-weight: 400;
                     font-size: 2.5rem;
                 }
             }
-            .bottom{
+
+            .bottom {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                button{
+
+                button {
                     padding: 1rem 6rem;
                     border-radius: 10px;
                     font-size: 1.2rem;
@@ -346,14 +431,137 @@ main {
 
     }
 
+    section.footer {
+        width: 100%;
+        @include flex(1rem);
+        align-items: center;
+        padding: 1rem;
+        animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 70%;
+
+        .container1 {
+            width: 100%;
+            background-color: rgb(36, 36, 36);
+            border-radius: 20px;
+            @include flex(4rem);
+            padding: 1.5rem;
+
+            .top {
+                h2 {
+                    font-weight: 400;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+                .icon {
+                    background-color: rgba(185, 183, 183, 0.126);
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 1rem;
+                    backdrop-filter: blur(9px);
+                    border: 1px solid rgb(155, 155, 155);
+                    border-radius: 0.5rem;
+                    width: fit-content;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .container2 {
+            width: 100%;
+            @include flex(1rem);
+
+            .box1 {
+                width: 100%;
+                background-color: rgb(36, 36, 36);
+                border-radius: 20px;
+                @include flex(4rem);
+                padding: 1.5rem;
+
+                #one {
+                    @include flex(1.5rem);
+
+                    h2 {
+                        font-weight: 400;
+                    }
+
+                    p {
+                        opacity: 0.8;
+                    }
+
+                    button {
+                        width: fit-content;
+                        padding: 1rem 1.5rem;
+                        background-color: #CEBD63;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 1rem;
+                    }
+                }
+
+            }
+
+            .box2 {
+                width: 100%;
+                background-color: rgb(36, 36, 36);
+                border-radius: 20px;
+                @include flex(3rem);
+                padding: 1.5rem;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                .top {
+                    p {
+                        font-weight: 100;
+                        line-height: 1.5rem;
+
+                        a {
+                            color: white;
+                        }
+                    }
+                }
+
+                .bottom {
+                    button {
+                        width: fit-content;
+                        padding: 1rem 1.5rem;
+                        background-color: transparent;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 1rem;
+                        color: white;
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-
-
 
 
 @media (min-width:1000px) {
 
     main {
+        section.header {
+            .bottom {
+                display: block;
+            }
+
+            #icon {
+                display: block;
+            }
+        }
+
         section.first {
             flex-direction: row;
 
@@ -378,23 +586,27 @@ main {
                 }
             }
         }
+
         section.second {
             flex-direction: row;
             padding: 2rem;
 
-            .top,.bottom{
-                .element{
-                    h1{
+            .top,
+            .bottom {
+                .element {
+                    h1 {
                         font-weight: 400;
                         font-size: 4rem;
                     }
                 }
             }
         }
+
         section.third {
             flex-direction: row-reverse;
 
-            .top,.bottom{
+            .top,
+            .bottom {
                 width: 50%;
             }
 
@@ -402,23 +614,26 @@ main {
                 padding: 4rem;
                 justify-content: space-between;
 
-                .text{
+                .text {
 
-                    h1{
+                    h1 {
                         font-size: 3rem;
                     }
+
                     .paragraphs {
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 1rem;
-                }
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 1rem;
+                    }
                 }
             }
         }
-         section.forth {
+
+        section.forth {
             flex-direction: row-reverse;
 
-            .top,.bottom{
+            .top,
+            .bottom {
                 width: 50%;
             }
 
@@ -426,68 +641,120 @@ main {
                 padding: 4rem;
                 justify-content: space-between;
 
-                .text{
+                .text {
 
-                    h1{
+                    h1 {
                         font-size: 3rem;
                     }
+
                     .paragraphs {
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 1rem;
-                }
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 1rem;
+                    }
                 }
             }
         }
-        section.fifth{
-            .but{
+
+        section.fifth {
+            .but {
                 display: block;
             }
         }
-        section.sixth{
+
+        section.sixth {
             flex-direction: row;
             width: 100%;
         }
-        section.seven{
+
+        section.seven {
             flex-direction: row;
 
-            .top,.bottom{
+            .top,
+            .bottom {
                 width: 50%;
             }
-            .bottom{
+
+            .bottom {
                 justify-content: space-between;
                 padding: 4rem;
 
-                h2{
+                h2 {
                     font-size: 3rem;
                 }
             }
         }
-        section.eight{
+
+        section.eight {
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
 
-            .container{
+            .container {
                 width: 100%;
                 display: flex;
                 padding: 4rem;
                 flex-direction: row;
-            justify-content: space-between;
+                justify-content: space-between;
 
-            .top{
-                width: 70%;
-                h2{
-                    font-size: 5rem;
-                    font-weight: 200;
+                .top {
+                    width: 70%;
+
+                    h2 {
+                        font-size: 5rem;
+                        font-weight: 200;
+                    }
                 }
-            }
-            .bottom{
-                button{
-                    padding: 1rem 1.5rem;
+
+                .bottom {
+                    button {
+                        padding: 1rem 1.5rem;
+                    }
                 }
-            }
             }
         }
+
+        section.footer {
+            flex-direction: row;
+
+            .container1 {
+                display: flex;
+                gap: 24rem;
+                justify-content: space-between;
+                padding: 4rem;
+                width: 30%;
+            }
+
+            .container2 {
+                width: 70%;
+
+                .box1,
+                .box2 {
+                    flex-direction: row;
+                }
+
+                .box1 {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 3rem;
+                }
+
+                .box2 {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes ani {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
