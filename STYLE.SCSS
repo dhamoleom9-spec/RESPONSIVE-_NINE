@@ -84,6 +84,7 @@ main {
         @include flex(1rem);
         padding: 1rem;
         animation: anii 2s ease;
+
         .top {
             width: 100%;
 
@@ -136,7 +137,7 @@ main {
         text-align: center;
         animation: ani 3s ease;
         animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+        animation-range: entry 2% cover 40%;
 
         .top,
         .bottom {
@@ -166,12 +167,13 @@ main {
         width: 100%;
         @include flex(1rem);
         padding: 1rem;
-        animation: ani 3s ease;
-        animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+
 
         .top {
             width: 100%;
+            animation: ani 3s ease;
+            animation-timeline: view();
+            animation-range: entry 2% cover 40%;
 
             img {
                 width: 100%;
@@ -185,6 +187,9 @@ main {
             border-radius: 20px;
             @include flex(5rem);
             padding: 1.5rem;
+            animation: ani 3s ease;
+            animation-timeline: view();
+            animation-range: entry 2% cover 40%;
 
 
             .text {
@@ -221,12 +226,13 @@ main {
         width: 100%;
         @include flex(1rem);
         padding: 1rem;
-        animation: ani 3s ease;
-        animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+       
 
         .top {
             width: 100%;
+             animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 40%;
 
             img {
                 width: 100%;
@@ -240,6 +246,9 @@ main {
             border-radius: 20px;
             @include flex(5rem);
             padding: 1.5rem;
+             animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 40%;
 
 
             .text {
@@ -278,7 +287,7 @@ main {
         align-items: center;
         animation: ani 3s ease;
         animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+        animation-range: entry 2% cover 40%;
 
         .con {
             h1 {
@@ -299,9 +308,7 @@ main {
         width: 100%;
         @include flex(1rem);
         padding: 1rem;
-        animation: ani 3s ease;
-        animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+
 
         .card {
             background-image: url(./six1.webp);
@@ -313,6 +320,9 @@ main {
             padding: 1rem;
             border-radius: 20px;
             width: 100%;
+            animation: ani 3s ease;
+            animation-timeline: view();
+            animation-range: entry 2% cover 40%;
 
             .icon,
             .bottom {
@@ -358,12 +368,13 @@ main {
         width: 100%;
         @include flex(1rem);
         padding: 1rem;
-        animation: ani 3s ease;
-        animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+        
 
         .top {
             width: 100%;
+            animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 40%;
 
             img {
                 width: 100%;
@@ -377,6 +388,9 @@ main {
             border-radius: 20px;
             @include flex(5rem);
             padding: 1.5rem;
+            animation: ani 3s ease;
+        animation-timeline: view();
+        animation-range: entry 2% cover 40%;
 
             h2 {
                 font-size: 2rem;
@@ -405,7 +419,7 @@ main {
         padding: 1rem;
         animation: ani 3s ease;
         animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+        animation-range: entry 2% cover 40%;
 
         .container {
             background-color: #CEBD63;
@@ -441,9 +455,7 @@ main {
         @include flex(1rem);
         align-items: center;
         padding: 1rem;
-        animation: ani 3s ease;
-        animation-timeline: view();
-        animation-range: entry 2% cover 70%;
+
 
         .container1 {
             width: 100%;
@@ -451,6 +463,9 @@ main {
             border-radius: 20px;
             @include flex(4rem);
             padding: 1.5rem;
+            animation: ani 3s ease;
+            animation-timeline: view();
+            animation-range: entry 2% cover 40%;
 
             .top {
                 h2 {
@@ -480,6 +495,9 @@ main {
         .container2 {
             width: 100%;
             @include flex(1rem);
+            animation: ani 3s ease;
+            animation-timeline: view();
+            animation-range: entry 2% cover 30%;
 
             .box1 {
                 width: 100%;
@@ -765,6 +783,7 @@ main {
         scale: 100%;
     }
 }
+
 @keyframes anii {
     from {
         opacity: 0;
